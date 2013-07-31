@@ -8,9 +8,11 @@
 // do whatever you want with this, 
 // just say nice things about me occasionally.
 
-#include <Entropy.h>              //much thanks to Walter Anderson - https://code.google.com/p/avr-hardware-random-number-generation/
+#include <Entropy.h>              //much thanks to Walter Anderson
+                                  //https://code.google.com/p/avr-hardware-random-number-generation/
 #include "SoftwareSerial.h"
-#include "Adafruit_Thermal.h"     //also thanks to Adafruit/Limor Fried - https://github.com/adafruit/Adafruit-Thermal-Printer-Library
+#include "Adafruit_Thermal.h"     //also thanks to Adafruit/Limor Fried
+                                  //https://github.com/adafruit/Adafruit-Thermal-Printer-Library
 #include <avr/pgmspace.h>
 
 int printer_RX_Pin = 5;  // this is the green wire
