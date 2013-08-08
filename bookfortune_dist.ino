@@ -15,7 +15,7 @@
 int printer_RX_Pin = 5;  // this is the green wire
 int printer_TX_Pin = 6;  // this is the yellow wire
 int buttonPin = 7;
-int ledPin = 4;
+int ledPin = 4;          // if you're not using a lighted button, comment this
 
 //copying fortune strings into flash memory
 prog_char fortune0[] PROGMEM="Accept that some days you're\nthe pigeon and some days\nyou're the statue.";
@@ -50,7 +50,7 @@ PROGMEM const char *fortune_table[]=
 char fortune[90]; //array size set to longest string size (or thereabout)
 
 //copy book titles into flash memory
-//titles, authors, and locations below will all carry the same array address
+//titles, authors, and locations should all have the same array address
 prog_char title0[] PROGMEM="The Perfect Ghost";
 prog_char title1[] PROGMEM="The Effects of Light";
 prog_char title2[] PROGMEM="Once Upon a River";
