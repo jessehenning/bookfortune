@@ -279,7 +279,6 @@ void printFortune() //prints output to printer
   printer.println(F("..and you can find it here:"));
   printer.println(F("FICTION"));
   printer.println(author);
-  printer.printBitmap(384, 85, wpllogocenter);
   printer.justify('C');
 //  printer.println(F("westervillelibrary.org"));   uncomment and use
 //  printer.println(F("@westervlibrary"));          your library's info
