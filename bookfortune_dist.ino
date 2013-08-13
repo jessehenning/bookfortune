@@ -257,7 +257,6 @@ void loop(){
 void getFortune()  //retrieves full fortune from flash memory, 
                    //fills fortune/author/title arrays
 {
-  randomSeed(analogRead(0));
   int f = Entropy.random(0,20);
   strcpy_P(fortune, (char*)pgm_read_word(&(fortune_table[f])));
   int b = Entropy.random(0,70);
