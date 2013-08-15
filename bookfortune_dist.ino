@@ -245,6 +245,8 @@ void loop(){
     if(val == LOW)
    {
      digitalWrite(ledPin, LOW);
+     printer.wake();
+     delay(50);
      getFortune();
      printFortune();
      printer.feed(4);
@@ -265,17 +267,17 @@ void getFortune()  //retrieves full fortune from flash memory,
 
 void printFortune() //prints output to printer
 {
-  printer.println(F("Today's words of wisdom:"));
+  printer.println("Today's words of wisdom:");
   printer.print("'"); printer.print(fortune); printer.print("'");
   printer.println();
   printer.println();
-  printer.println(F("I predict you'll be reading..."));
+  printer.println("I predict you'll be reading...");
   printer.underlineOn();
   printer.println(title);
   printer.underlineOff();
   printer.println();
-  printer.println(F("..and you can find it here:"));
-  printer.println(F("FICTION"));
+  printer.println("..and you can find it here:");
+  printer.println("FICTION");
   printer.println(author);
   printer.justify('C');
 //  printer.println(F("westervillelibrary.org"));   uncomment and use
